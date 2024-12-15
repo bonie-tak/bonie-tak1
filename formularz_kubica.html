@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prosty formularz</title>
+    <title>Kubica Formularz</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
         form {
             display: flex;
             flex-direction: column;
-            max-width: 400px; /* Ograniczenie szerokości formularza */
+            max-width: 400px; 
         }
 
         label {
@@ -33,11 +33,18 @@
         .horizontal label {
             margin-right: 10px;
         }
+
+        /* Zwiększenie rozmiaru czcionki dla tytułu formularza */
+        h1 {
+            font-size: 24px; /* Zwiększenie rozmiaru czcionki */
+            margin-bottom: 20px; /* Dodanie odstępu od formularza */
+        }
     </style>
 </head>
 <body>
+    <h1>Kubica Formularz</h1> <!-- Tytuł formularza -->
     <form>
-        <!-- Pole tekstowe na imię (opcjonalne) -->
+        
         <label for="imie">Imię:</label>
         <input type="text" id="imie" name="imie" placeholder="Wpisz swoje imię">
 
@@ -85,4 +92,7 @@
     </form>
 </body>
 </html>
+
+
+
 
