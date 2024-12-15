@@ -34,26 +34,26 @@
             margin-right: 10px;
         }
 
-        /* Zwiększenie rozmiaru czcionki dla tytułu formularza */
+       
         h1 {
-            font-size: 24px; /* Zwiększenie rozmiaru czcionki */
-            margin-bottom: 20px; /* Dodanie odstępu od formularza */
+            font-size: 24px; 
+            margin-bottom: 20px; 
         }
     </style>
 </head>
 <body>
-    <h1>Kubica Formularz</h1> <!-- Tytuł formularza -->
+    <h1>Formularz o zainteresowaniach</h1> <!-- Tytuł formularza -->
     <form>
         
         <label for="imie">Imię:</label>
         <input type="text" id="imie" name="imie" placeholder="Wpisz swoje imię">
 
-        <!-- Pytanie z odpowiedzią tekstową -->
+       
         <label for="pytanie1">Jakie jest Twoje ulubione hobby?</label>
         <textarea id="pytanie1" name="pytanie1" rows="3" placeholder="Wpisz odpowiedź..."></textarea>
 
-        <!-- Pytanie z wyborem wielokrotnym (checkboxy) -->
-        <label for="zainteresowania">Wybierz swoje zainteresowania:</label>
+       
+        <label for="zainteresowania">Wybierz co lubisz robić bardziej:</label>
         <div>
             <input type="checkbox" id="sport" name="zainteresowania" value="sport">
             <label for="sport">Sport</label>
@@ -61,33 +61,33 @@
             <input type="checkbox" id="muzyka" name="zainteresowania" value="muzyka">
             <label for="muzyka">Muzyka</label>
 
-            <input type="checkbox" id="sztuka" name="zainteresowania" value="sztuka">
+            <input type="checkbox" id="sztuka" name="zainteresowania" value="gry">
             <label for="sztuka">Sztuka</label>
         </div>
 
-        <!-- Opcje wyboru w poziomie -->
+       
         <div class="horizontal">
-            <label for="opcje">Wybierz opcję:</label>
-            <input type="radio" id="opcja1" name="opcje" value="1">
+            <label for="opcje">Wybierzsport który lubisz najbardziej:</label>
+            <input type="radio" id="opcja1" name="piłka nożna" value="1">
             <label for="opcja1">Opcja 1</label>
 
-            <input type="radio" id="opcja2" name="opcje" value="2">
+            <input type="radio" id="opcja2" name="pływania" value="2">
             <label for="opcja2">Opcja 2</label>
 
-            <input type="radio" id="opcja3" name="opcje" value="3">
+            <input type="radio" id="opcja3" name="biegi" value="3">
             <label for="opcja3">Opcja 3</label>
         </div>
 
-        <!-- Pole wyboru z listy rozwijanej -->
-        <label for="lista">Wybierz z listy:</label>
+        
+        <label for="lista">jakie gry wolisz</label>
         <select id="lista" name="lista">
-            <option value="">-- Wybierz --</option>
-            <option value="1">Opcja 1</option>
-            <option value="2">Opcja 2</option>
-            <option value="3">Opcja 3</option>
+            <option value=""> Wybierz </option>
+            <option value="1">dynamicze</option>
+            <option value="2">strategiczne</option>
+            <option value="3">relaksujące</option>
         </select>
 
-        <!-- Przycisk wysyłania formularza -->
+        
         <button type="submit">Wyślij</button>
     </form>
 </body>
